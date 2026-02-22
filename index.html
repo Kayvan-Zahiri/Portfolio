@@ -13,6 +13,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 
 <body>
@@ -51,9 +52,11 @@
       <div class="hero-actions animate-in">
         <a href="#projects" class="btn btn--primary">View My Work</a>
         <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        <a href="Kayvan_Zahiri_Resume_1pg copy.pdf" target="_blank" class="btn btn--outline"><i
+            class="fa-solid fa-download"></i> Resume</a>
       </div>
       <div class="hero-socials animate-in">
-        <a href="https://github.com/Kayvan-Zahiri/" target="_blank" rel="noopener" aria-label="GitHub"><i
+        <a href="https://github.com/kzahiri1/" target="_blank" rel="noopener" aria-label="GitHub"><i
             class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/kayvan-zahiri/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
             class="fa-brands fa-linkedin-in"></i></a>
@@ -74,6 +77,13 @@
     <div class="container">
       <h2 class="section-title animate-in">About Me</h2>
       <div class="about-grid">
+        <div class="about-left animate-in">
+          <div class="about-photo">
+            <img src="Kayvan Zahiri (5)~2 copy.jpg" alt="Kayvan Zahiri"
+              onerror="this.parentElement.classList.add('no-photo')" />
+            <div class="photo-fallback"><i class="fa-solid fa-user"></i></div>
+          </div>
+        </div>
         <div class="about-text animate-in">
           <p>I'm an <strong>AI Engineer</strong> and <strong>Software Developer</strong> with a passion for building
             intelligent systems that make a real impact. Currently working on the Voice AI team at
@@ -385,6 +395,34 @@
           </div>
         </article>
 
+        <article class="project-card animate-in" id="project-dashboard">
+          <div class="project-image">
+            <div class="project-image-placeholder" data-project="dashboard">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-tag">Data Dashboard</span>
+              <span class="project-tag">NLP</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>AI/ML Industry Data Dashboard</h3>
+            <p>Data dashboard aggregating AI/ML content from arXiv papers and Medium articles. Features automated
+              scraping via GCS, article trend visualizations, and Anthropic topic clustering analysis.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>GCS</span>
+              <span>NLP</span>
+              <span>Google Cloud Run</span>
+            </div>
+            <div class="project-links">
+              <a href="https://streamlit-image-885485481306.europe-west1.run.app/" target="_blank" rel="noopener"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -458,6 +496,7 @@
             <span class="chip">Bootstrap</span>
             <span class="chip">Eclipse Jetty</span>
             <span class="chip">Maven</span>
+            <span class="chip">Streamlit</span>
           </div>
         </div>
 

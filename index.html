@@ -26,6 +26,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#opensource">Open Source</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -80,8 +81,8 @@
           <span class="stat-label">Audio Samples Labeled</span>
         </div>
         <div class="animate-in">
-          <span class="stat-number">1M+</span>
-          <span class="stat-label">Tokens Evaluated</span>
+          <span class="stat-number">18</span>
+          <span class="stat-label">Open Source PRs Merged</span>
         </div>
         <div class="animate-in">
           <span class="stat-number">7+</span>
@@ -284,6 +285,95 @@
     <div class="container">
       <h2 class="section-title animate-in">Featured Projects</h2>
       <div class="projects-grid">
+
+        <article class="project-card animate-in" id="project-agenthands">
+          <div class="project-image">
+            <div class="project-image-placeholder" data-project="agenthands">
+              <i aria-hidden="true" class="fa-solid fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-tag">Agents</span>
+              <span class="project-tag">Automation</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>agent-hands</h3>
+            <p>Computer-use automation for legacy back-office apps with no API. A model drives the app once and
+              emits a reviewable, versioned capability artifact; a deterministic engine replays it with no model
+              in the loop. Targets are recorded as a ranked list of accessibility-tree strategies, so a renamed
+              field degrades to a fallback instead of breaking, and the degradation is logged. Built against a
+              deliberately hostile fixture: frameset, table layout, no labels, server-generated IDs.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Playwright</span>
+              <span>Claude API</span>
+              <span>Accessibility Tree</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Kayvan-Zahiri/agent-hands" target="_blank"
+                rel="noopener"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card animate-in" id="project-asragegap">
+          <div class="project-image">
+            <div class="project-image-placeholder" data-project="asragegap">
+              <i aria-hidden="true" class="fa-solid fa-wave-square"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-tag">Benchmark</span>
+              <span class="project-tag">Speech</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>asr-age-gap</h3>
+            <p>A published benchmark that set out to find an age penalty in speech recognition and found the
+              opposite. On 2,760 Common Voice clips matched on accent, gender and speaker, Whisper scores 4.67%
+              WER on people in their seventies against 6.53% on twenties, replicated on a wav2vec2 CTC control.
+              The penalty is in turn-taking instead: at a fixed 700ms endpoint, 19.7% of sixties utterances carry
+              a pause that long against 8.0% of twenties, which word error rate cannot see.</p>
+            <div class="project-tech">
+              <span>PyTorch</span>
+              <span>Whisper</span>
+              <span>wav2vec2</span>
+              <span>Common Voice</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Kayvan-Zahiri/asr-age-gap" target="_blank"
+                rel="noopener"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card animate-in" id="project-earthbench">
+          <div class="project-image">
+            <div class="project-image-placeholder" data-project="earthbench">
+              <i aria-hidden="true" class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-tag">Evaluation</span>
+              <span class="project-tag">Agents</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>EARTHBENCH</h3>
+            <p>A grounding harness that tests whether an agent-facing geospatial API can be trusted, scored
+              against oracles outside the system under test. It answers or refuses correctly on 71 of 75 cases
+              with zero false answers, and beats a no-data LLM 23-3. The finding that mattered was reproducibility:
+              the same question at the same coordinate returned different field selections across calls, which for
+              a product sold as audit-ready is the result worth reporting.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Eval Harness</span>
+              <span>Bootstrapping</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Kayvan-Zahiri/earthbench" target="_blank"
+                rel="noopener"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project-card animate-in" id="project-resumeai">
           <div class="project-image">
@@ -509,6 +599,66 @@
           </div>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPEN SOURCE ===== -->
+  <section class="section" id="opensource">
+    <div class="container">
+      <h2 class="section-title animate-in">Open Source</h2>
+      <p class="section-sub animate-in">18 pull requests merged into established projects, plus open work under
+        review. I find the bug, write the failing test, and send the fix.</p>
+
+      <div class="edu-grid oss-grid">
+        <div class="edu-card animate-in">
+          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-bolt"></i></div>
+          <div class="edu-body">
+            <h3>astral-sh/uv</h3>
+            <p class="edu-school">Two merged, both reviewed and merged by Astral's co-founder. A git URL whose
+              repository name ends in <code>.py</code> was parsed as a script path; and the
+              virtual-environment hint was lost whenever the base interpreter did not live in
+              <code>bin</code>.</p>
+            <p class="edu-date"><a href="https://github.com/astral-sh/uv/pull/21144" target="_blank"
+                rel="noopener">#21144</a> · <a href="https://github.com/astral-sh/uv/pull/21146" target="_blank"
+                rel="noopener">#21146</a></p>
+          </div>
+        </div>
+
+        <div class="edu-card animate-in">
+          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-music"></i></div>
+          <div class="edu-body">
+            <h3>librosa · statsmodels</h3>
+            <p class="edu-school">Merged by core maintainers of both projects. In librosa, input validation in
+              <code>rms</code>; open now, a docs build change measured to prune 61% of the published site.</p>
+            <p class="edu-date"><a href="https://github.com/librosa/librosa/pull/2087" target="_blank"
+                rel="noopener">librosa #2087</a> · <a href="https://github.com/statsmodels/statsmodels/pull/10089"
+                target="_blank" rel="noopener">statsmodels #10089</a></p>
+          </div>
+        </div>
+
+        <div class="edu-card animate-in">
+          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-gauge-high"></i></div>
+          <div class="edu-body">
+            <h3>Lightning-AI/torchmetrics</h3>
+            <p class="edu-school">Open: <code>import torchmetrics</code> pulled in <code>scipy.signal</code>
+              eagerly from a shim for a dependency the library never imports. Measured 1085ms to 655ms.</p>
+            <p class="edu-date"><a href="https://github.com/Lightning-AI/torchmetrics/pull/3459" target="_blank"
+                rel="noopener">#3459</a></p>
+          </div>
+        </div>
+
+        <div class="edu-card animate-in">
+          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-microphone-lines"></i></div>
+          <div class="edu-body">
+            <h3>Speech &amp; audio</h3>
+            <p class="edu-school">faster-whisper: <code>multilingual=True</code> silently decoded a window in the
+              previous window's language, because the prompt context was bound before the language switch.
+              Also open at whisperX, pyannote-audio and pytorch/audio.</p>
+            <p class="edu-date"><a href="https://github.com/SYSTRAN/faster-whisper/pull/1477" target="_blank"
+                rel="noopener">faster-whisper #1477</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

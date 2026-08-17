@@ -762,6 +762,21 @@ img {
   color: rgba(255, 164, 92, 0.25);
 }
 
+[data-project="agenthands"] {
+  background: linear-gradient(135deg, #2a1206 0%, #331a08 50%, #1c1208 100%);
+  color: rgba(237, 170, 98, 0.30);
+}
+
+[data-project="asragegap"] {
+  background: linear-gradient(135deg, #101f33 0%, #0d2436 50%, #0a1a2e 100%);
+  color: rgba(120, 190, 255, 0.26);
+}
+
+[data-project="earthbench"] {
+  background: linear-gradient(135deg, #0c2a1e 0%, #0d2b28 50%, #0a1f22 100%);
+  color: rgba(110, 230, 175, 0.26);
+}
+
 [data-project="resumeai"] {
   background: linear-gradient(135deg, #1a0533 0%, #2a0a3a 50%, #0d1b2a 100%);
   color: rgba(124, 92, 255, 0.28);
@@ -973,6 +988,43 @@ img {
   text-align: center;
   max-width: 640px;
   margin: 0 auto;
+}
+
+.oss-grid {
+  max-width: 1000px;
+}
+
+@media (min-width: 900px) {
+  .oss-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 720px;
+  margin: -32px auto 48px;
+  line-height: 1.7;
+}
+
+.edu-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, .22);
+  color: var(--accent-1);
+}
+
+.edu-date a {
+  color: var(--accent-1);
+  text-decoration: none;
+}
+
+.edu-date a:hover {
+  text-decoration: underline;
 }
 
 .contact-sub {

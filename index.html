@@ -81,7 +81,7 @@
           <span class="stat-label">Audio Samples Labeled</span>
         </div>
         <div class="animate-in">
-          <span class="stat-number">18</span>
+          <span class="stat-number">28</span>
           <span class="stat-label">Open Source PRs Merged</span>
         </div>
         <div class="animate-in">
@@ -608,56 +608,67 @@
   <section class="section" id="opensource">
     <div class="container">
       <h2 class="section-title animate-in">Open Source</h2>
-      <p class="section-sub animate-in">18 pull requests merged into established projects, plus open work under
-        review. I find the bug, write the failing test, and send the fix.</p>
+      <p class="section-sub animate-in">28 pull requests merged into third-party production repos, with 65 more
+        under review. I find the bug, write the failing test, and send the fix.</p>
 
       <div class="edu-grid oss-grid">
         <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-bolt"></i></div>
+          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-waveform-lines"></i></div>
           <div class="edu-body">
-            <h3>astral-sh/uv</h3>
-            <p class="edu-school">Two merged, both reviewed and merged by Astral's co-founder. A git URL whose
-              repository name ends in <code>.py</code> was parsed as a script path; and the
-              virtual-environment hint was lost whenever the base interpreter did not live in
-              <code>bin</code>.</p>
-            <p class="edu-date"><a href="https://github.com/astral-sh/uv/pull/21144" target="_blank"
-                rel="noopener">#21144</a> · <a href="https://github.com/astral-sh/uv/pull/21146" target="_blank"
-                rel="noopener">#21146</a></p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-music"></i></div>
-          <div class="edu-body">
-            <h3>librosa · statsmodels</h3>
-            <p class="edu-school">Merged by core maintainers of both projects. In librosa, input validation in
-              <code>rms</code>; open now, a docs build change measured to prune 61% of the published site.</p>
-            <p class="edu-date"><a href="https://github.com/librosa/librosa/pull/2087" target="_blank"
-                rel="noopener">librosa #2087</a> · <a href="https://github.com/statsmodels/statsmodels/pull/10089"
-                target="_blank" rel="noopener">statsmodels #10089</a></p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-gauge-high"></i></div>
-          <div class="edu-body">
-            <h3>Lightning-AI/torchmetrics</h3>
-            <p class="edu-school">Open: <code>import torchmetrics</code> pulled in <code>scipy.signal</code>
-              eagerly from a shim for a dependency the library never imports. Measured 1085ms to 655ms.</p>
-            <p class="edu-date"><a href="https://github.com/Lightning-AI/torchmetrics/pull/3459" target="_blank"
-                rel="noopener">#3459</a></p>
+            <h3>openai/whisper</h3>
+            <p class="edu-school">Merged by one of the authors of the Whisper paper. The English number
+              normalizer rewrote the digit <code>1</code> as "one" inside larger numbers, not only when it
+              stood alone, so timestamps and quantities came out wrong. Twelve lines.</p>
+            <p class="edu-date"><a href="https://github.com/openai/whisper/pull/2836" target="_blank"
+                rel="noopener">#2836</a></p>
           </div>
         </div>
 
         <div class="edu-card animate-in">
           <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-microphone-lines"></i></div>
           <div class="edu-body">
-            <h3>Speech &amp; audio</h3>
-            <p class="edu-school">faster-whisper: <code>multilingual=True</code> silently decoded a window in the
-              previous window's language, because the prompt context was bound before the language switch.
-              Also open at whisperX, pyannote-audio and pytorch/audio.</p>
-            <p class="edu-date"><a href="https://github.com/SYSTRAN/faster-whisper/pull/1477" target="_blank"
-                rel="noopener">faster-whisper #1477</a></p>
+            <h3>Hugging Face Transformers &middot; Deepgram</h3>
+            <p class="edu-school">Both merged by maintainers. Transformers is the library most of this field
+              runs on, and Deepgram builds speech recognition, so their Python SDK is the closest thing to
+              working in the room.</p>
+            <p class="edu-date"><a href="https://github.com/huggingface/transformers/pull/47888" target="_blank"
+                rel="noopener">transformers #47888</a> &middot; <a
+                href="https://github.com/deepgram/deepgram-python-sdk/pull/767" target="_blank"
+                rel="noopener">deepgram #767</a></p>
+          </div>
+        </div>
+
+        <div class="edu-card animate-in">
+          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-bolt"></i></div>
+          <div class="edu-body">
+            <h3>astral-sh/uv &middot; librosa</h3>
+            <p class="edu-school">Merged by the people who built them. Two into uv by Astral's co-founder: a git
+              URL ending in <code>.py</code> parsed as a script path, and a lost virtual-environment hint. In
+              librosa, input validation in <code>rms</code>, merged by the library's creator.</p>
+            <p class="edu-date"><a href="https://github.com/astral-sh/uv/pull/21144" target="_blank"
+                rel="noopener">uv #21144</a> &middot; <a href="https://github.com/astral-sh/uv/pull/21146"
+                target="_blank" rel="noopener">#21146</a> &middot; <a
+                href="https://github.com/librosa/librosa/pull/2087" target="_blank"
+                rel="noopener">librosa #2087</a></p>
+          </div>
+        </div>
+
+        <div class="edu-card animate-in">
+          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-code-pull-request"></i></div>
+          <div class="edu-body">
+            <h3>In review</h3>
+            <p class="edu-school">Open fixes at Microsoft, NVIDIA, Google DeepMind and Meta. Shape inference
+              for ONNX reduction operators; a voice-activity detector clipping the last frame of every segment,
+              approved by an NVIDIA maintainer; a learning-rate schedule that never fired on negative metrics;
+              and a vector-index round-trip that silently dropped its storage index.</p>
+            <p class="edu-date"><a href="https://github.com/microsoft/onnxruntime/pull/32376" target="_blank"
+                rel="noopener">onnxruntime #32376</a> &middot; <a
+                href="https://github.com/NVIDIA-NeMo/Speech/pull/16200" target="_blank"
+                rel="noopener">NeMo #16200</a> &middot; <a
+                href="https://github.com/google-deepmind/optax/pull/1767" target="_blank"
+                rel="noopener">optax #1767</a> &middot; <a
+                href="https://github.com/facebookresearch/faiss/pull/5564" target="_blank"
+                rel="noopener">faiss #5564</a></p>
           </div>
         </div>
       </div>

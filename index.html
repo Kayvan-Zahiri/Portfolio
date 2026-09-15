@@ -4,855 +4,513 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kayvan Zahiri — AI Engineer & Software Developer</title>
-  <meta name="description"
-    content="Portfolio of Kayvan Zahiri — AWS- and GCP-certified AI Engineer and Software Developer specializing in full-stack development, GenAI, and LLM fine-tuning." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Kayvan Zahiri, AI engineer in San Francisco</title>
+  <meta name="description" content="Kayvan Zahiri is an AI engineer in San Francisco, the founder of ResumeAI, and most recently on the Voice AI team at Asurion." />
+  <meta name="theme-color" content="#e9eaec" />
+  <link rel="canonical" href="https://kayvan-zahiri.github.io/Portfolio/" />
+  <meta property="og:title" content="Kayvan Zahiri, AI engineer in San Francisco" />
+  <meta property="og:description" content="Founder of ResumeAI. Most recently on the Voice AI team at Asurion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kayvan-zahiri.github.io/Portfolio/" />
+  <meta property="og:image" content="https://kayvan-zahiri.github.io/Portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preload" href="fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <a class="skip" href="#work">Skip to work</a>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">KZ</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#opensource">Open Source</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-merge" viewBox="0 0 16 16"><path d="M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z"/></symbol>
+    <symbol id="i-pr" viewBox="0 0 16 16"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"/></symbol>
+    <symbol id="i-commit" viewBox="0 0 16 16"><path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/></symbol>
+  </svg>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-orb hero-orb--1"></div>
-      <div class="hero-orb hero-orb--2"></div>
-      <div class="hero-orb hero-orb--3"></div>
-      <div class="hero-grid"></div>
+  <header class="bar" id="bar">
+    <a class="bar-name" href="#top">Kayvan Zahiri</a>
+    <nav class="bar-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#open-source">Open source</a>
+      <a href="#about">About</a>
+      <a href="Kayvan_Zahiri_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-haspopup="dialog" aria-controls="menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <dialog class="menu" id="menu" aria-label="Menu">
+    <div class="menu-top">
+      <span class="menu-name">Kayvan Zahiri</span>
+      <button class="menu-close" type="button">Close</button>
     </div>
-    <div class="hero-content">
-      <h1 class="hero-name animate-in">Kayvan Zahiri</h1>
-      <p class="hero-tagline animate-in">AI Engineer & Software Developer</p>
-      <p class="hero-sub animate-in">Founder of ResumeAI · production MLOps · full-stack — based in San Francisco</p>
-      <div class="hero-actions animate-in">
-        <a href="#projects" class="btn btn--primary">Selected work</a>
-        <a href="#contact" class="btn btn--outline">Contact</a>
-        <a href="Kayvan_Zahiri_Resume.pdf" target="_blank" rel="noopener" class="btn btn--outline"><i aria-hidden="true"
-            class="fa-solid fa-download"></i> Resume</a>
-      </div>
-      <div class="hero-socials animate-in">
-        <a href="https://github.com/Kayvan-Zahiri" target="_blank" rel="noopener" aria-label="GitHub"><i aria-hidden="true"
-            class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/kayvan-zahiri/" target="_blank" rel="noopener" aria-label="LinkedIn"><i aria-hidden="true"
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:kayvanandre@gmail.com" aria-label="Email"><i aria-hidden="true" class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <a href="#about" aria-label="Scroll down">
-        <div class="scroll-indicator">
-          <div class="scroll-dot"></div>
+    <nav aria-label="Menu">
+      <a href="#work">Work</a>
+      <a href="#open-source">Open source</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="Kayvan_Zahiri_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </dialog>
+
+  <main id="top">
+
+    <!-- The table -->
+    <section class="table" aria-labelledby="name">
+      <div class="hero">
+        <h1 id="name"><span>Kayvan</span> <span>Zahiri</span></h1>
+        <p class="lede">AI engineer in San Francisco. Founder of ResumeAI.</p>
+        <div class="cta">
+          <a class="btn" href="mailto:kayvanandre@gmail.com">Email me</a>
+          <a class="text-link" href="Kayvan_Zahiri_Resume.pdf" target="_blank" rel="noopener">Resume</a>
         </div>
+      </div>
+
+      <a class="obj h-phone" href="#pantriq" aria-label="PantrIQ, iOS app">
+        <img src="assets/pantriq-discover.webp" width="660" height="1434" alt="" draggable="false" />
       </a>
-    </div>
-  </section>
 
-  <!-- ===== STATS ===== -->
-  <section class="stats-section">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="animate-in">
-          <span class="stat-number">400K+</span>
-          <span class="stat-label">Audio Samples Labeled</span>
-        </div>
-        <div class="animate-in">
-          <span class="stat-number">33</span>
-          <span class="stat-label">Open Source PRs Merged</span>
-        </div>
-        <div class="animate-in">
-          <span class="stat-number">7+</span>
-          <span class="stat-label">Countries Reached</span>
-        </div>
-        <div class="animate-in">
-          <span class="stat-number">12.7K</span>
-          <span class="stat-label">SF Blocks Predicted</span>
-        </div>
+      <a class="obj h-print" href="#about" aria-label="About Kayvan">
+        <img src="kayvan-zahiri.jpg" width="512" height="512" alt="" draggable="false" />
+      </a>
+
+      <a class="obj h-map" href="#parkcast" aria-label="ParkCast SF">
+        <span class="map">
+          <video muted loop playsinline preload="none" poster="assets/parkcast-poster.webp" data-autoplay aria-hidden="true">
+            <source src="assets/parkcast.webm" type="video/webm" />
+            <source src="assets/parkcast.mp4" type="video/mp4" />
+          </video>
+        </span>
+        <span class="cap"><b>ParkCast SF</b><span>Parking predictions for 12.7K SF blocks</span></span>
+      </a>
+
+      <a class="obj h-chart" href="#resumeai" aria-label="ATS share among large employers, from ResumeAI data">
+        <img src="assets/resumeai-ats-chart.webp" width="630" height="385" alt="" draggable="false" />
+        <span class="chart-cap">ATS share, from ResumeAI data</span>
+      </a>
+
+      <a class="obj h-pr pr" href="#open-source" aria-label="Merged pull request, openai/whisper #2836">
+        <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+        <strong>openai/whisper #2836</strong>
+        <span class="pr-desc">Fix English number normalizer</span>
+      </a>
+
+      <a class="obj h-window" href="#resumeai" aria-label="ResumeAI">
+        <span class="tb" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span>ResumeAI</span>
+        <img src="assets/resumeai-editor.webp" width="1400" height="832" alt="" draggable="false" />
+      </a>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <h2 class="sec-title" id="work-title">Work</h2>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title animate-in">About Me</h2>
-      <div class="about-grid">
-        <div class="about-left animate-in">
-          <div class="about-photo">
-            <img src="kayvan-zahiri.jpg" alt="Kayvan Zahiri"
-              onerror="this.parentElement.classList.add('no-photo')" />
-            <div class="photo-fallback"><i aria-hidden="true" class="fa-solid fa-user"></i></div>
+      <article class="wrap spread" id="resumeai">
+        <div class="scene" data-scene>
+          <div class="obj skin-window" style="--x:1; --y:13; --w:80; --r:-2deg">
+            <span class="tb" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span>ResumeAI</span>
+            <img src="assets/resumeai-editor.webp" width="1400" height="832" alt="ResumeAI editor with a live resume preview" loading="lazy" draggable="false" />
+          </div>
+          <div class="obj skin-shot" style="--x:67; --y:3; --w:26; --r:6deg">
+            <img src="assets/resumeai-score.webp" width="377" height="377" alt="Example ResumeAI score card reading 92" loading="lazy" draggable="false" />
+          </div>
+          <div class="obj skin-print" style="--x:46; --y:56; --w:50; --r:-4deg">
+            <img src="assets/resumeai-ats-chart.webp" width="630" height="385" alt="Bar chart of applicant tracking system share among large employers" loading="lazy" draggable="false" />
+            <span class="print-cap">ATS share, from ResumeAI data</span>
           </div>
         </div>
-        <div class="about-text animate-in">
-          <p>I'm an <strong>AI Engineer</strong>, <strong>Software Developer</strong>, and the founder of
-            <strong>ResumeAI</strong> — an AI-powered resume platform I built solo that's now used across 7+ countries.
-            Most recently I was on the Voice AI team at <strong>Asurion</strong>, where I built a voice turn-detection
-            system and scaled an automated labeling pipeline to fine-tune a Whisper-based model for real-time
-            conversational AI.
+        <div class="copy">
+          <p class="kicker">Founder. Built solo.</p>
+          <h3>ResumeAI</h3>
+          <p>AI-powered ATS resume optimizer: ATS compatibility scoring, Claude-powered bullet rewriting, AI cover letter generation, PDF/DOCX export and a companion Chrome extension. Reached active users across 7+ countries with 80%+ week-over-week new-user growth.</p>
+          <p class="stack">Next.js, TypeScript, Supabase, Claude API, Stripe, Chrome extension</p>
+          <p class="links"><a class="ext" href="https://withresumeai.com/" target="_blank" rel="noopener">withresumeai.com</a></p>
+        </div>
+      </article>
+
+      <article class="wrap spread flip" id="parkcast">
+        <div class="scene" data-scene>
+          <div class="obj skin-card map-card" style="--x:4; --y:15; --w:92; --r:2deg">
+            <span class="map">
+              <video muted loop playsinline preload="none" poster="assets/parkcast-poster.webp" data-autoplay aria-label="ParkCast SF demo: parking predictions over Mission Bay">
+                <source src="assets/parkcast.webm" type="video/webm" />
+                <source src="assets/parkcast.mp4" type="video/mp4" />
+              </video>
+            </span>
+            <span class="cap"><b>ParkCast SF</b><span>Predicted occupancy around Chase Center</span></span>
+          </div>
+        </div>
+        <div class="copy">
+          <p class="kicker">Team project</p>
+          <h3>ParkCast SF</h3>
+          <p>End-to-end MLOps system predicting parking occupancy for 12.7K SF blocks at 8.98 MAE / 0.73 R² from a 33-feature LightGBM residual model. Fully automated GitHub Actions retraining pipeline with MLflow tracking and a champion-challenger gate that blocks silent regressions before Cloud Run rollout.</p>
+          <p class="stack">FastAPI, LightGBM, Docker, GCP Cloud Run, GitHub Actions, MLflow</p>
+          <p class="links">
+            <a class="ext" href="https://parkcast-sf.vercel.app" target="_blank" rel="noopener">Live demo</a>
+            <a class="ext" href="https://github.com/Brandonminer333/ml-ops-final-project-team-ParkCast-SF" target="_blank" rel="noopener">GitHub</a>
           </p>
-          <p>With a B.S. in Computer Science and an M.S. in Data Science &amp; AI from the
-            <strong>University of San Francisco</strong>, I work across the full AI/ML lifecycle — from training and
-            fine-tuning LLMs with RLHF to shipping production MLOps pipelines and full-stack apps end to end.
-          </p>
         </div>
-        <div class="about-highlights animate-in">
-          <div class="highlight-card">
-            <div class="highlight-icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></div>
-            <h3>AI / ML</h3>
-            <p>LLM fine-tuning, RLHF, RAG, Voice AI, prompt engineering, and model evaluation</p>
+      </article>
+
+      <article class="wrap spread" id="pantriq">
+        <div class="scene" data-scene>
+          <div class="obj skin-phone" style="--x:14; --y:2; --w:31; --r:-6deg">
+            <img src="assets/pantriq-discover.webp" width="660" height="1434" alt="PantrIQ Discover screen with featured recipes" loading="lazy" draggable="false" />
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i aria-hidden="true" class="fa-solid fa-code"></i></div>
-            <h3>Full-Stack</h3>
-            <p>React, Next.js, TypeScript, Python — building apps from database to deployment</p>
+          <div class="obj skin-phone" style="--x:50; --y:8; --w:31; --r:5deg">
+            <img src="assets/pantriq-planner.webp" width="660" height="1434" alt="PantrIQ meal planner week view" loading="lazy" draggable="false" />
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i aria-hidden="true" class="fa-solid fa-cloud"></i></div>
-            <h3>Cloud & MLOps</h3>
-            <p>AWS & GCP certified · MLOps pipelines, ETL, Docker, distributed computing</p>
+          <div class="obj skin-icon" style="--x:80; --y:68; --w:14; --r:9deg">
+            <img src="assets/pantriq-icon.webp" width="160" height="160" alt="PantrIQ app icon" loading="lazy" draggable="false" />
           </div>
+        </div>
+        <div class="copy">
+          <p class="kicker">iOS app</p>
+          <h3>PantrIQ</h3>
+          <p>Full-stack AI mobile app for pantry management, with recipe suggestions, automated meal planning and shopping lists from scan, voice or text input.</p>
+          <p class="stack">React Native, TypeScript, Supabase, OpenAI, TailwindCSS</p>
+          <p class="links"><a class="ext" href="https://apps.apple.com/us/app/pantriq/id6746662127" target="_blank" rel="noopener">App Store</a></p>
+        </div>
+      </article>
+
+      <article class="wrap spread flip" id="asr-age-gap">
+        <div class="scene" data-scene>
+          <figure class="obj skin-card fig" style="--x:7; --y:12; --w:86; --r:-2deg">
+            <p class="fig-title">Word error rate, Whisper</p>
+            <div class="bars" style="--max:8">
+              <span class="bar-label">Twenties</span><span class="fig-bar"><i style="--v:6.53"></i></span><span class="bar-val">6.53%</span>
+              <span class="bar-label">Seventies</span><span class="fig-bar"><i style="--v:4.67"></i></span><span class="bar-val">4.67%</span>
+            </div>
+            <p class="fig-title">Utterances with a 700 ms pause</p>
+            <div class="bars" style="--max:20">
+              <span class="bar-label">Twenties</span><span class="fig-bar"><i style="--v:8"></i></span><span class="bar-val">8.0%</span>
+              <span class="bar-label">Sixties</span><span class="fig-bar"><i style="--v:19.7"></i></span><span class="bar-val">19.7%</span>
+            </div>
+            <figcaption class="fig-note">2,760 Common Voice clips matched on accent, gender and speaker</figcaption>
+          </figure>
+        </div>
+        <div class="copy">
+          <p class="kicker">Benchmark</p>
+          <h3>asr-age-gap</h3>
+          <p>A published benchmark that set out to find an age penalty in speech recognition and found the opposite. On 2,760 Common Voice clips matched on accent, gender and speaker, Whisper scores 4.67% WER on people in their seventies against 6.53% on twenties, replicated on a wav2vec2 CTC control. The penalty is in turn-taking instead: at a fixed 700ms endpoint, 19.7% of sixties utterances carry a pause that long against 8.0% of twenties, which word error rate cannot see.</p>
+          <p class="stack">PyTorch, Whisper, wav2vec2, Common Voice</p>
+          <p class="links"><a class="ext" href="https://github.com/Kayvan-Zahiri/asr-age-gap" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="wrap spread" id="agent-hands">
+        <div class="scene wide" data-scene>
+          <div class="obj skin-window legacy" style="--x:3; --y:14; --w:94; --r:-2deg">
+            <span class="tb" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span>Meridian Core</span>
+            <img src="assets/agent-hands-meridian.webp" width="784" height="341" alt="Meridian Core, a legacy banking test app, on its Confirm Funds Transfer screen" loading="lazy" draggable="false" />
+          </div>
+        </div>
+        <div class="copy">
+          <p class="kicker">Agents and automation</p>
+          <h3>agent-hands</h3>
+          <p>Computer-use automation for legacy back-office apps with no API. A model drives the app once and emits a reviewable, versioned capability artifact; a deterministic engine replays it with no model in the loop. Targets are recorded as a ranked list of accessibility-tree strategies, so a renamed field degrades to a fallback instead of breaking, and the degradation is logged. Built against a deliberately hostile fixture: frameset, table layout, no labels, server-generated IDs.</p>
+          <p class="stack">Python, Playwright, Claude API, Accessibility tree</p>
+          <p class="links"><a class="ext" href="https://github.com/Kayvan-Zahiri/agent-hands" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="wrap spread flip" id="earthbench">
+        <div class="scene wide" data-scene>
+          <div class="obj skin-card result" style="--x:19; --y:10; --w:62; --r:3deg">
+            <p class="result-big">71<span>/75</span></p>
+            <p class="result-label">answered or refused correctly</p>
+            <dl class="result-rows">
+              <div><dt>False answers</dt><dd>0</dd></div>
+              <div><dt>Against a no-data LLM</dt><dd>23–3</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="copy">
+          <p class="kicker">Evaluation</p>
+          <h3>EARTHBENCH</h3>
+          <p>A grounding harness that tests whether an agent-facing geospatial API can be trusted, scored against oracles outside the system under test. It answers or refuses correctly on 71 of 75 cases with zero false answers, and beats a no-data LLM 23–3. The finding that mattered was reproducibility: the same question at the same coordinate returned different field selections across calls, which for a product sold as audit-ready is the result worth reporting.</p>
+          <p class="stack">Python, Eval harness, Bootstrapping</p>
+          <p class="links"><a class="ext" href="https://github.com/Kayvan-Zahiri/earthbench" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </article>
+
+      <div class="wrap more">
+        <h3 class="more-title">More projects</h3>
+        <ul class="more-list" role="list">
+          <li>
+            <h4>Search Engine</h4>
+            <p>Full-stack search engine with inverted index, TF-IDF ranking and a multithreaded web crawler. 1,746 SLOC with 1,910 lines of Javadoc documentation.</p>
+            <p class="stack">Java 21, Apache OpenNLP, Jetty, Bootstrap, Maven</p>
+            <a class="ext" href="https://github.com/Kayvan-Zahiri/SearchEngine-kzahiri1" target="_blank" rel="noopener" aria-label="Search Engine on GitHub">GitHub</a>
+          </li>
+          <li>
+            <h4>Semiparametric Regression Visualizer</h4>
+            <p>Interactive web app for exploring semiparametric regression models. Compare OLS against Generalized Additive Models with real-time visualizations on datasets like Boston Housing and World Happiness.</p>
+            <p class="stack">Python, Streamlit, pygam, statsmodels, Google Cloud Run</p>
+            <a class="ext" href="https://github.com/Kayvan-Zahiri/Semiparametric-Regression" target="_blank" rel="noopener" aria-label="Semiparametric Regression Visualizer on GitHub">GitHub</a>
+          </li>
+          <li>
+            <h4>AI Interviewer Tool</h4>
+            <p>GenAI research app that simulates user interviews and focus groups with participant personas you define, for product and UX research.</p>
+            <p class="stack">Python, Streamlit, OpenAI, Prompt engineering</p>
+            <a class="ext" href="https://testrepo-q6urbxbtjxhdzbpf2psn2x.streamlit.app/" target="_blank" rel="noopener" aria-label="AI Interviewer Tool live app">Live app</a>
+          </li>
+          <li>
+            <h4>AI/ML Industry Data Dashboard</h4>
+            <p>Data dashboard aggregating AI/ML content from arXiv papers and Medium articles, with automated scraping via GCS, article trend visualizations and Anthropic-powered topic clustering.</p>
+            <p class="stack">Python, Streamlit, GCS, NLP, Anthropic, Google Cloud Run</p>
+            <span class="no-link"></span>
+          </li>
+          <li>
+            <h4>PeopleCodeOpenAI</h4>
+            <p>Python library that gives easy access to OpenAI’s tools and APIs, including text-to-speech, speech recognition and RAG. Used in introductory courses at USF.</p>
+            <p class="stack">Python, OpenAI API, RAG, Speech recognition</p>
+            <span class="no-link"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Open source -->
+    <section class="section" id="open-source" aria-labelledby="oss-title">
+      <div class="wrap">
+        <h2 class="sec-title" id="oss-title">Open source</h2>
+        <p class="sec-lede">33 pull requests merged into third-party production repos, with 67 more in review.</p>
+      </div>
+
+      <div class="wrap">
+        <div class="prs" data-scene>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/openai/whisper/pull/2836" target="_blank" rel="noopener">openai/whisper #2836</a></strong>
+            <span class="pr-desc">The English number normalizer rewrote the digit 1 as “one” inside larger numbers, so timestamps and quantities came out wrong. Twelve lines.</span>
+            <span class="pr-note">Merged by one of the authors of the Whisper paper.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-commit" /></svg>Landed</span>
+            <strong><a class="cover" href="https://github.com/facebookresearch/faiss/commit/b4c66ba" target="_blank" rel="noopener">facebookresearch/faiss b4c66ba</a></strong>
+            <span class="pr-desc">The index factory’s round-trip silently dropped the HNSW storage index.</span>
+            <span class="pr-note">Imported and landed by a Meta engineer.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong>astral-sh/uv <a href="https://github.com/astral-sh/uv/pull/21144" target="_blank" rel="noopener">#21144</a> and <a href="https://github.com/astral-sh/uv/pull/21146" target="_blank" rel="noopener">#21146</a></strong>
+            <span class="pr-desc">Two fixes into uv.</span>
+            <span class="pr-note">Merged by Astral’s co-founder.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/librosa/librosa/pull/2087" target="_blank" rel="noopener">librosa #2087</a></strong>
+            <span class="pr-desc">Input validation in <code>rms</code>.</span>
+            <span class="pr-note">Merged by the library’s creator.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/AssemblyAI/assemblyai-python-sdk/pull/234" target="_blank" rel="noopener">assemblyai-python-sdk #234</a></strong>
+            <span class="pr-desc">AssemblyAI took two in one evening.</span>
+            <span class="pr-note">Named in their v1.3.0 release notes.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/elevenlabs/elevenlabs-python/pull/858" target="_blank" rel="noopener">elevenlabs-python #858</a></strong>
+            <span class="pr-desc">Closed as untouchable generated code until I showed the file was listed in their own .fernignore.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/deepgram/deepgram-python-sdk/pull/767" target="_blank" rel="noopener">deepgram-python-sdk #767</a></strong>
+            <span class="pr-desc">Merged into Deepgram’s Python SDK.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/huggingface/transformers/pull/47888" target="_blank" rel="noopener">huggingface/transformers #47888</a></strong>
+            <span class="pr-desc">Merged into Hugging Face Transformers.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
+            <strong><a class="cover" href="https://github.com/microsoft/onnxruntime/pull/32376" target="_blank" rel="noopener">microsoft/onnxruntime #32376</a></strong>
+            <span class="pr-desc">Shape inference for ONNX reduction operators.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
+            <strong><a class="cover" href="https://github.com/NVIDIA-NeMo/Speech/pull/16200" target="_blank" rel="noopener">NVIDIA-NeMo/Speech #16200</a></strong>
+            <span class="pr-desc">A voice-activity detector clipping the last frame of every segment.</span>
+            <span class="pr-note">Approved by an NVIDIA maintainer.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
+            <strong><a class="cover" href="https://github.com/google-deepmind/optax/pull/1767" target="_blank" rel="noopener">google-deepmind/optax #1767</a></strong>
+            <span class="pr-desc">A learning-rate schedule that never fired on negative metrics.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
+            <strong><a class="cover" href="https://github.com/pytorch/audio/pull/4227" target="_blank" rel="noopener">pytorch/audio #4227</a></strong>
+            <span class="pr-desc">A strided-window bug crashing feature extraction on non-contiguous audio.</span>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== EXPERIENCE ===== -->
-  <section class="section section--alt" id="experience">
-    <div class="container">
-      <h2 class="section-title animate-in">Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item animate-in">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>AI Engineer</h3>
-                <p class="timeline-company">Asurion</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Jan 2026 — Jun 2026</span>
-                <span class="timeline-location">Remote</span>
-              </div>
-            </div>
-            <ul class="timeline-details">
-              <li>Built a voice turn-detection system, improving auto-labeling accuracy from 50% to 88%+ (90%+ on a
-                400-sample validation set)</li>
-              <li>Designed and scaled an automated labeling pipeline to auto-label 400K+ audio samples, enabling
-                large-scale fine-tuning of a Whisper-based PyTorch model</li>
-              <li>Deployed the model in a real-time voice AI pipeline (LiveKit) for low-latency, end-to-end
-                conversational agent testing</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item animate-in">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>AI Engineer</h3>
-                <p class="timeline-company">Spotly Jobs</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Oct 2025 — Jan 2026</span>
-                <span class="timeline-location">Remote</span>
-              </div>
-            </div>
-            <ul class="timeline-details">
-              <li>Built optimized ATS pipelines, increasing job coverage 5%+ and processing hundreds of postings per run
-                via dlt/dbt</li>
-              <li>Created 7 Dagster assets/sensors to automate ETL workflows, reducing manual intervention 50%+</li>
-              <li>Improved processing speed by 30–40% through optimized scraping logic and API handling</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item animate-in">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>AI Engineer</h3>
-                <p class="timeline-company">Outlier AI</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">May 2024 — Sep 2025</span>
-                <span class="timeline-location">Remote</span>
-              </div>
-            </div>
-            <ul class="timeline-details">
-              <li>Trained LLMs using RLHF, improving instruction-following accuracy by 20%</li>
-              <li>Evaluated 1M+ tokens across multiple datasets, surfacing 300+ instruction-following errors</li>
-              <li>Refactored 3+ AI models to generate more precise and succinct output</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item animate-in">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Software Developer</h3>
-                <p class="timeline-company">University of San Francisco · IDEA Team</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Sep 2024 — May 2025</span>
-                <span class="timeline-location">San Francisco, CA</span>
-              </div>
-            </div>
-            <ul class="timeline-details">
-              <li>Lead developer delivering 3 full-cycle applications for the IDEA team</li>
-              <li>Created 3 GenAI Python apps adopted by 50+ students and professors</li>
-              <li>Researched and evaluated 10+ existing AI tools and technologies</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item animate-in">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Software Developer</h3>
-                <p class="timeline-company">Founders Network</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Aug 2024 — Dec 2024</span>
-                <span class="timeline-location">San Francisco, CA</span>
-              </div>
-            </div>
-            <ul class="timeline-details">
-              <li>Built Slack integrations into a codebase of over 10,000 lines of code</li>
-              <li>Delivered 8 sprint cycles in Agile with a 95% on-time delivery rate</li>
-              <li>Collaborated directly with the CEO and a team of professional developers</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item animate-in">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Software Developer</h3>
-                <p class="timeline-company">University of San Francisco</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">May 2024 — Aug 2024</span>
-                <span class="timeline-location">San Francisco, CA</span>
-              </div>
-            </div>
-            <ul class="timeline-details">
-              <li>Created and deployed 2 generative AI Thunkable apps, one featured on the site's front page</li>
-              <li>Lead developer on a full-stack PeopleMuseum project — 5,000+ lines of code</li>
-              <li>Built front-end UI with React JS, achieving load times under 2 seconds</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title animate-in">Featured Projects</h2>
-      <div class="projects-grid">
-
-        <article class="project-card animate-in" id="project-agenthands">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="agenthands">
-              <i aria-hidden="true" class="fa-solid fa-robot"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Agents</span>
-              <span class="project-tag">Automation</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>agent-hands</h3>
-            <p>Computer-use automation for legacy back-office apps with no API. A model drives the app once and
-              emits a reviewable, versioned capability artifact; a deterministic engine replays it with no model
-              in the loop. Targets are recorded as a ranked list of accessibility-tree strategies, so a renamed
-              field degrades to a fallback instead of breaking, and the degradation is logged. Built against a
-              deliberately hostile fixture: frameset, table layout, no labels, server-generated IDs.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Playwright</span>
-              <span>Claude API</span>
-              <span>Accessibility Tree</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Kayvan-Zahiri/agent-hands" target="_blank"
-                rel="noopener"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-asragegap">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="asragegap">
-              <i aria-hidden="true" class="fa-solid fa-wave-square"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Benchmark</span>
-              <span class="project-tag">Speech</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>asr-age-gap</h3>
-            <p>A published benchmark that set out to find an age penalty in speech recognition and found the
-              opposite. On 2,760 Common Voice clips matched on accent, gender and speaker, Whisper scores 4.67%
-              WER on people in their seventies against 6.53% on twenties, replicated on a wav2vec2 CTC control.
-              The penalty is in turn-taking instead: at a fixed 700ms endpoint, 19.7% of sixties utterances carry
-              a pause that long against 8.0% of twenties, which word error rate cannot see.</p>
-            <div class="project-tech">
-              <span>PyTorch</span>
-              <span>Whisper</span>
-              <span>wav2vec2</span>
-              <span>Common Voice</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Kayvan-Zahiri/asr-age-gap" target="_blank"
-                rel="noopener"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-earthbench">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="earthbench">
-              <i aria-hidden="true" class="fa-solid fa-earth-americas"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Evaluation</span>
-              <span class="project-tag">Agents</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>EARTHBENCH</h3>
-            <p>A grounding harness that tests whether an agent-facing geospatial API can be trusted, scored
-              against oracles outside the system under test. It answers or refuses correctly on 71 of 75 cases
-              with zero false answers, and beats a no-data LLM 23-3. The finding that mattered was reproducibility:
-              the same question at the same coordinate returned different field selections across calls, which for
-              a product sold as audit-ready is the result worth reporting.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Eval Harness</span>
-              <span>Bootstrapping</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Kayvan-Zahiri/earthbench" target="_blank"
-                rel="noopener"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-resumeai">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="resumeai">
-              <i aria-hidden="true" class="fa-solid fa-wand-magic-sparkles"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Founder</span>
-              <span class="project-tag">SaaS</span>
-              <span class="project-tag">AI</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>ResumeAI</h3>
-            <p>AI-powered ATS resume optimizer I founded and built solo — ATS compatibility scoring, Claude-powered
-              bullet rewriting, AI cover letter generation, PDF/DOCX export, and a companion Chrome extension. Reached
-              active users across 7+ countries with 80%+ week-over-week new-user growth.</p>
-            <div class="project-tech">
-              <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>Supabase</span>
-              <span>Claude API</span>
-              <span>Stripe</span>
-              <span>Chrome Extension</span>
-            </div>
-            <div class="project-links">
-              <a href="https://withresumeai.com/" target="_blank" rel="noopener"><i aria-hidden="true"
-                  class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-parkcast">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="parkcast">
-              <i aria-hidden="true" class="fa-solid fa-square-parking"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">MLOps</span>
-              <span class="project-tag">ML</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>ParkCast SF</h3>
-            <p>End-to-end MLOps system predicting parking occupancy for 12.7K SF blocks at 8.98 MAE / 0.73 R² from a
-              33-feature LightGBM residual model. Fully automated GitHub Actions retraining pipeline with MLflow tracking
-              and a champion-challenger gate that blocks silent regressions before Cloud Run rollout.</p>
-            <div class="project-tech">
-              <span>FastAPI</span>
-              <span>LightGBM</span>
-              <span>Docker</span>
-              <span>GCP Cloud Run</span>
-              <span>GitHub Actions</span>
-              <span>MLflow</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Brandonminer333/ml-ops-final-project-team-ParkCast-SF" target="_blank"
-                rel="noopener"><i aria-hidden="true" class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-pantriq">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="pantriq">
-              <i aria-hidden="true" class="fa-solid fa-utensils"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Mobile App</span>
-              <span class="project-tag">AI</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>PantrIQ</h3>
-            <p>Full-stack AI-powered mobile app for smart pantry management with recipe suggestions, automated meal
-              planning, shopping list generation, and multi-input support (scan, voice, text).</p>
-            <div class="project-tech">
-              <span>React Native</span>
-              <span>TypeScript</span>
-              <span>Supabase</span>
-              <span>OpenAI</span>
-              <span>TailwindCSS</span>
-            </div>
-            <div class="project-links">
-              <a href="https://apps.apple.com/us/app/pantriq/id6746662127" target="_blank" rel="noopener"><i aria-hidden="true"
-                  class="fa-brands fa-app-store-ios"></i> App Store</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-peoplecode">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="peoplecode">
-              <i aria-hidden="true" class="fa-solid fa-microchip"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Python Library</span>
-              <span class="project-tag">Open Source</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>PeopleCodeOpenAI</h3>
-            <p>Python library providing easy access to OpenAI's tools and APIs — including text-to-speech, speech
-              recognition, and RAG. Used in introductory courses at USF.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>OpenAI API</span>
-              <span>RAG</span>
-              <span>Speech Recognition</span>
-            </div>
-            <div class="project-links">
-              <a href="https://www.peoplecode.ai/" target="_blank" rel="noopener"><i aria-hidden="true"
-                  class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-search">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="search">
-              <i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Full-Stack</span>
-              <span class="project-tag">Java</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>Search Engine</h3>
-            <p>Full-stack search engine with inverted index, TF-IDF ranking, and a multithreaded web crawler —
-              1,746 SLOC with 1,910 lines of Javadoc documentation.</p>
-            <div class="project-tech">
-              <span>Java 21</span>
-              <span>Apache OpenNLP</span>
-              <span>Jetty</span>
-              <span>Bootstrap</span>
-              <span>Maven</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/kzahiri1/SearchEngine-kzahiri1" target="_blank" rel="noopener"><i aria-hidden="true"
-                  class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-regression">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="regression">
-              <i aria-hidden="true" class="fa-solid fa-chart-line"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Data Science</span>
-              <span class="project-tag">Streamlit</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>Semiparametric Regression Visualizer</h3>
-            <p>Interactive web app for exploring semiparametric regression models. Compare OLS vs Generalized Additive
-              Models with real-time visualizations on datasets like Boston Housing and World Happiness.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Streamlit</span>
-              <span>pygam</span>
-              <span>statsmodels</span>
-              <span>Google Cloud Run</span>
-            </div>
-            <div class="project-links">
-              <a href="https://linear-regression-app-302284986471.europe-west1.run.app/" target="_blank"
-                rel="noopener"><i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-interviewer">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="interviewer">
-              <i aria-hidden="true" class="fa-solid fa-comments"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">GenAI</span>
-              <span class="project-tag">Research</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>AI Interviewer Tool</h3>
-            <p>GenAI-powered research app that simulates user interviews and focus groups. Define participant personas,
-              conduct interactive interviews, and gather AI-driven insights for product and UX research.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Streamlit</span>
-              <span>OpenAI</span>
-              <span>Prompt Engineering</span>
-            </div>
-            <div class="project-links">
-              <a href="https://testrepo-q6urbxbtjxhdzbpf2psn2x.streamlit.app/" target="_blank" rel="noopener"><i aria-hidden="true"
-                  class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card animate-in" id="project-dashboard">
-          <div class="project-image">
-            <div class="project-image-placeholder" data-project="dashboard">
-              <i aria-hidden="true" class="fa-solid fa-newspaper"></i>
-            </div>
-            <div class="project-overlay">
-              <span class="project-tag">Data Dashboard</span>
-              <span class="project-tag">NLP</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>AI/ML Industry Data Dashboard</h3>
-            <p>Data dashboard aggregating AI/ML content from arXiv papers and Medium articles. Features automated
-              scraping via GCS, article trend visualizations, and Anthropic topic clustering analysis.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Streamlit</span>
-              <span>GCS</span>
-              <span>NLP</span>
-              <span>Anthropic</span>
-              <span>Google Cloud Run</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== OPEN SOURCE ===== -->
-  <section class="section" id="opensource">
-    <div class="container">
-      <h2 class="section-title animate-in">Open Source</h2>
-      <p class="section-sub animate-in">33 pull requests merged into third-party production repos, with 67 more
-        under review. I find the bug, write the failing test, and send the fix.</p>
-
-      <div class="edu-grid oss-grid">
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-waveform-lines"></i></div>
-          <div class="edu-body">
-            <h3>openai/whisper</h3>
-            <p class="edu-school">Merged by one of the authors of the Whisper paper. The English number
-              normalizer rewrote the digit <code>1</code> as "one" inside larger numbers, not only when it
-              stood alone, so timestamps and quantities came out wrong. Twelve lines.</p>
-            <p class="edu-date"><a href="https://github.com/openai/whisper/pull/2836" target="_blank"
-                rel="noopener">#2836</a></p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-microphone-lines"></i></div>
-          <div class="edu-body">
-            <h3>Speech companies</h3>
-            <p class="edu-school">Merged into the Python SDKs of Deepgram, ElevenLabs and AssemblyAI, plus
-              Hugging Face Transformers. AssemblyAI took two in one evening and named me in their v1.3.0
-              release notes. ElevenLabs was closed as untouchable generated code until I showed the file
-              was listed in their own .fernignore.</p>
-            <p class="edu-date"><a href="https://github.com/deepgram/deepgram-python-sdk/pull/767" target="_blank"
-                rel="noopener">deepgram #767</a> &middot; <a
-                href="https://github.com/elevenlabs/elevenlabs-python/pull/858" target="_blank"
-                rel="noopener">elevenlabs #858</a> &middot; <a
-                href="https://github.com/AssemblyAI/assemblyai-python-sdk/pull/234" target="_blank"
-                rel="noopener">assemblyai #234</a> &middot; <a
-                href="https://github.com/huggingface/transformers/pull/47888" target="_blank"
-                rel="noopener">transformers #47888</a></p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-bolt"></i></div>
-          <div class="edu-body">
-            <h3>Meta &middot; astral-sh/uv &middot; librosa</h3>
-            <p class="edu-school">Merged by the people who maintain them. At Meta, a FAISS index factory whose
-              round-trip silently dropped the HNSW storage index, imported and landed by a Meta engineer. Two
-              into uv by Astral's co-founder. In librosa, input validation in <code>rms</code>, merged by the
-              library's creator.</p>
-            <p class="edu-date"><a href="https://github.com/facebookresearch/faiss/commit/b4c66ba" target="_blank"
-                rel="noopener">faiss b4c66ba</a> &middot; <a href="https://github.com/astral-sh/uv/pull/21144"
-                target="_blank" rel="noopener">uv #21144</a> &middot; <a
-                href="https://github.com/astral-sh/uv/pull/21146" target="_blank"
-                rel="noopener">#21146</a> &middot; <a
-                href="https://github.com/librosa/librosa/pull/2087" target="_blank"
-                rel="noopener">librosa #2087</a></p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-code-pull-request"></i></div>
-          <div class="edu-body">
-            <h3>In review</h3>
-            <p class="edu-school">Open fixes at Microsoft, NVIDIA, Google DeepMind and Meta. Shape inference
-              for ONNX reduction operators; a voice-activity detector clipping the last frame of every segment,
-              approved by an NVIDIA maintainer; a learning-rate schedule that never fired on negative metrics;
-              and a strided-window bug crashing feature extraction on non-contiguous audio.</p>
-            <p class="edu-date"><a href="https://github.com/microsoft/onnxruntime/pull/32376" target="_blank"
-                rel="noopener">onnxruntime #32376</a> &middot; <a
-                href="https://github.com/NVIDIA-NeMo/Speech/pull/16200" target="_blank"
-                rel="noopener">NeMo #16200</a> &middot; <a
-                href="https://github.com/google-deepmind/optax/pull/1767" target="_blank"
-                rel="noopener">optax #1767</a> &middot; <a
-                href="https://github.com/pytorch/audio/pull/4227" target="_blank"
-                rel="noopener">pytorch/audio #4227</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section class="section section--alt" id="skills">
-    <div class="container">
-      <h2 class="section-title animate-in">Skills &amp; Technologies</h2>
-      <div class="skills-grid">
-
-        <div class="skill-group animate-in">
-          <h3><i aria-hidden="true" class="fa-solid fa-terminal"></i> Languages</h3>
-          <div class="skill-chips">
-            <span class="chip">Python</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">Java</span>
-            <span class="chip">C</span>
-            <span class="chip">SQL</span>
-            <span class="chip">NoSQL</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">HTML/CSS</span>
-          </div>
-        </div>
-
-        <div class="skill-group animate-in">
-          <h3><i aria-hidden="true" class="fa-solid fa-brain"></i> AI / ML</h3>
-          <div class="skill-chips">
-            <span class="chip">Generative AI</span>
-            <span class="chip">LLM Fine-Tuning</span>
-            <span class="chip">RLHF</span>
-            <span class="chip">Voice AI</span>
-            <span class="chip">Prompt Engineering</span>
-            <span class="chip">Model Evaluation</span>
-            <span class="chip">RAG</span>
-            <span class="chip">Deep Learning</span>
-            <span class="chip">PyTorch</span>
-            <span class="chip">Whisper</span>
-            <span class="chip">Claude API</span>
-            <span class="chip">OpenAI</span>
-          </div>
-        </div>
-
-        <div class="skill-group animate-in">
-          <h3><i aria-hidden="true" class="fa-solid fa-chart-line"></i> Data Science</h3>
-          <div class="skill-chips">
-            <span class="chip">PySpark</span>
-            <span class="chip">SparkSQL</span>
-            <span class="chip">Pandas</span>
-            <span class="chip">NumPy</span>
-            <span class="chip">Scikit-Learn</span>
-            <span class="chip">Matplotlib</span>
-            <span class="chip">Plotly</span>
-            <span class="chip">ETL Pipelines</span>
-            <span class="chip">Regression</span>
-            <span class="chip">Classification</span>
-            <span class="chip">Unsupervised Learning</span>
-          </div>
-        </div>
-
-        <div class="skill-group animate-in">
-          <h3><i aria-hidden="true" class="fa-solid fa-toolbox"></i> Tools &amp; Platforms</h3>
-          <div class="skill-chips">
-            <span class="chip">AWS</span>
-            <span class="chip">GCP</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Git / GitHub</span>
-            <span class="chip">Bash</span>
-            <span class="chip">LiveKit</span>
-            <span class="chip">MLflow</span>
-            <span class="chip">Dagster</span>
-            <span class="chip">Apache Airflow</span>
-            <span class="chip">dlt / dbt</span>
-            <span class="chip">MongoDB</span>
-            <span class="chip">Distributed Computing</span>
-          </div>
-        </div>
-
-        <div class="skill-group animate-in">
-          <h3><i aria-hidden="true" class="fa-solid fa-layer-group"></i> Frameworks</h3>
-          <div class="skill-chips">
-            <span class="chip">React / React Native</span>
-            <span class="chip">Next.js</span>
-            <span class="chip">FastAPI</span>
-            <span class="chip">Supabase</span>
-            <span class="chip">Stripe</span>
-            <span class="chip">TailwindCSS</span>
-            <span class="chip">Streamlit</span>
-            <span class="chip">Bootstrap</span>
-            <span class="chip">Eclipse Jetty</span>
-            <span class="chip">Maven</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EDUCATION ===== -->
-  <section class="section" id="education">
-    <div class="container">
-      <h2 class="section-title animate-in">Education &amp; Certifications</h2>
-      <div class="edu-grid">
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-graduation-cap"></i></div>
-          <div class="edu-body">
-            <h3>M.S. in Data Science &amp; Artificial Intelligence</h3>
-            <p class="edu-school">University of San Francisco</p>
-            <p class="edu-date">Jul 2025 — Jun 2026</p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-solid fa-graduation-cap"></i></div>
-          <div class="edu-body">
-            <h3>B.S. in Computer Science</h3>
-            <p class="edu-school">University of San Francisco</p>
-            <p class="edu-date">Aug 2021 — May 2025</p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-brands fa-aws"></i></div>
-          <div class="edu-body">
-            <h3>AWS Certified Cloud Practitioner</h3>
-            <p class="edu-school">Amazon Web Services</p>
-          </div>
-        </div>
-
-        <div class="edu-card animate-in">
-          <div class="edu-icon"><i aria-hidden="true" class="fa-brands fa-google"></i></div>
-          <div class="edu-body">
-            <h3>Google Cloud Digital Leader</h3>
-            <p class="edu-school">Google Cloud</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section section--alt" id="contact">
-    <div class="container">
-      <div class="contact-wrapper animate-in">
-        <h2 class="section-title">Contact</h2>
-        <p class="contact-sub">The fastest way to reach me is email — I'm looking for AI engineering roles and
-          interesting problems to work on.</p>
-        <div class="contact-links">
-          <a href="mailto:kayvanandre@gmail.com" class="contact-card">
-            <i aria-hidden="true" class="fa-solid fa-envelope"></i>
-            <span>kayvanandre@gmail.com</span>
-          </a>
-          <a href="https://www.linkedin.com/in/kayvan-zahiri/" target="_blank" rel="noopener" class="contact-card">
-            <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/Kayvan-Zahiri" target="_blank" rel="noopener" class="contact-card">
-            <i aria-hidden="true" class="fa-brands fa-github"></i>
-            <span>GitHub</span>
+      <div class="wrap">
+        <div class="contrib" data-scene>
+          <a class="obj flow skin-print" href="https://github.com/Kayvan-Zahiri" target="_blank" rel="noopener" aria-label="GitHub contribution calendar for Kayvan-Zahiri">
+            <img src="assets/github-contributions-light.webp" width="1400" height="221" alt="" loading="lazy" draggable="false" />
+            <span class="print-cap">github.com/Kayvan-Zahiri</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Kayvan Zahiri. All rights reserved.</p>
-    </div>
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <h2 class="sec-title" id="exp-title">Experience</h2>
+        <ol class="roles" role="list">
+          <li class="role">
+            <p class="role-when"><span>Jan 2026 – Jun 2026</span><span>Remote</span></p>
+            <div class="role-what">
+              <h3>Asurion</h3>
+              <p class="role-title">AI Engineer</p>
+              <ul>
+                <li>Built a voice turn-detection system, improving auto-labeling accuracy from 50% to 88%+ (90%+ on a 400-sample validation set)</li>
+                <li>Designed and scaled an automated labeling pipeline to auto-label 400K+ audio samples, enabling large-scale fine-tuning of a Whisper-based PyTorch model</li>
+                <li>Deployed the model in a real-time voice AI pipeline (LiveKit) for low-latency, end-to-end conversational agent testing</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <p class="role-when"><span>Oct 2025 – Jan 2026</span><span>Remote</span></p>
+            <div class="role-what">
+              <h3>Spotly Jobs</h3>
+              <p class="role-title">AI Engineer</p>
+              <ul>
+                <li>Built optimized ATS pipelines, increasing job coverage 5%+ and processing hundreds of postings per run via dlt/dbt</li>
+                <li>Created 7 Dagster assets/sensors to automate ETL workflows, reducing manual intervention 50%+</li>
+                <li>Improved processing speed by 30–40% through optimized scraping logic and API handling</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <p class="role-when"><span>May 2024 – Sep 2025</span><span>Remote</span></p>
+            <div class="role-what">
+              <h3>Outlier AI</h3>
+              <p class="role-title">AI Engineer</p>
+              <ul>
+                <li>Trained LLMs using RLHF, improving instruction-following accuracy by 20%</li>
+                <li>Evaluated 1M+ tokens across multiple datasets, surfacing 300+ instruction-following errors</li>
+                <li>Refactored 3+ AI models to generate more precise and succinct output</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <p class="role-when"><span>Sep 2024 – May 2025</span><span>San Francisco, CA</span></p>
+            <div class="role-what">
+              <h3>University of San Francisco, IDEA Team</h3>
+              <p class="role-title">Software Developer</p>
+              <ul>
+                <li>Lead developer delivering 3 full-cycle applications for the IDEA team</li>
+                <li>Created 3 GenAI Python apps adopted by 50+ students and professors</li>
+                <li>Researched and evaluated 10+ existing AI tools and technologies</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <p class="role-when"><span>Aug 2024 – Dec 2024</span><span>San Francisco, CA</span></p>
+            <div class="role-what">
+              <h3>Founders Network</h3>
+              <p class="role-title">Software Developer</p>
+              <ul>
+                <li>Built Slack integrations into a codebase of over 10,000 lines of code</li>
+                <li>Delivered 8 sprint cycles in Agile with a 95% on-time delivery rate</li>
+                <li>Collaborated directly with the CEO and a team of professional developers</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <p class="role-when"><span>May 2024 – Aug 2024</span><span>San Francisco, CA</span></p>
+            <div class="role-what">
+              <h3>University of San Francisco</h3>
+              <p class="role-title">Software Developer</p>
+              <ul>
+                <li>Created and deployed 2 generative AI Thunkable apps, one featured on the site’s front page</li>
+                <li>Lead developer on a full-stack PeopleMuseum project, 5,000+ lines of code</li>
+                <li>Built front-end UI with React JS, achieving load times under 2 seconds</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about">
+        <div class="about-photo" data-scene>
+          <figure class="obj flow skin-print about-print">
+            <img src="kayvan-zahiri.jpg" width="512" height="512" alt="Portrait of Kayvan Zahiri" loading="lazy" draggable="false" />
+          </figure>
+        </div>
+        <div class="about-copy">
+          <h2 class="sec-title" id="about-title">About</h2>
+          <p>I’m an AI engineer, software developer and the founder of ResumeAI, an AI-powered resume platform I built solo that’s now used across 7+ countries. Most recently I was on the Voice AI team at Asurion, where I built a voice turn-detection system and scaled an automated labeling pipeline to 400K+ audio samples, used to fine-tune a Whisper-based model for real-time conversational AI.</p>
+          <p>With a B.S. in Computer Science and an M.S. in Data Science &amp; AI from the University of San Francisco, I work across the full AI/ML lifecycle, from training and fine-tuning LLMs with RLHF to shipping production MLOps pipelines and full-stack apps end to end.</p>
+          <dl class="rows focus">
+            <div><dt>AI / ML</dt><dd>LLM fine-tuning, RLHF, RAG, voice AI, prompt engineering and model evaluation</dd></div>
+            <div><dt>Full-stack</dt><dd>React, Next.js, TypeScript, Python. Apps from database to deployment</dd></div>
+            <div><dt>Cloud &amp; MLOps</dt><dd>AWS and GCP certified. MLOps pipelines, ETL, Docker, distributed computing</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="wrap lists">
+        <div>
+          <h3 class="list-title">Skills</h3>
+          <dl class="rows">
+            <div><dt>Languages</dt><dd>Python, TypeScript, Java, C, SQL, NoSQL, JavaScript, HTML/CSS</dd></div>
+            <div><dt>AI / ML</dt><dd>Generative AI, LLM fine-tuning, RLHF, voice AI, prompt engineering, model evaluation, RAG, deep learning, PyTorch, Whisper, Claude API, OpenAI</dd></div>
+            <div><dt>Data science</dt><dd>PySpark, SparkSQL, Pandas, NumPy, Scikit-Learn, Matplotlib, Plotly, ETL pipelines, regression, classification, unsupervised learning</dd></div>
+            <div><dt>Tools &amp; platforms</dt><dd>AWS, GCP, Docker, Git / GitHub, Bash, LiveKit, MLflow, Dagster, Apache Airflow, dlt / dbt, MongoDB, distributed computing</dd></div>
+            <div><dt>Frameworks</dt><dd>React / React Native, Next.js, FastAPI, Supabase, Stripe, TailwindCSS, Streamlit, Bootstrap, Eclipse Jetty, Maven</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3 class="list-title">Education</h3>
+          <ul class="edu" role="list">
+            <li><b>M.S. in Data Science &amp; Artificial Intelligence</b><span>University of San Francisco</span><span class="when">Jul 2025 – Jun 2026</span></li>
+            <li><b>B.S. in Computer Science</b><span>University of San Francisco</span><span class="when">Aug 2021 – May 2025</span></li>
+            <li><b>AWS Certified Cloud Practitioner</b><span>Amazon Web Services</span></li>
+            <li><b>Google Cloud Digital Leader</b><span>Google Cloud</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="contact-kicker" id="contact-title">Contact</h2>
+        <a class="contact-email" href="mailto:kayvanandre@gmail.com">kayvanandre@gmail.com</a>
+        <p class="contact-line">The fastest way to reach me is email. I’m looking for AI engineering roles and interesting problems to work on.</p>
+        <p class="links">
+          <a class="ext" href="https://www.linkedin.com/in/kayvan-zahiri/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="ext" href="https://github.com/Kayvan-Zahiri" target="_blank" rel="noopener">GitHub</a>
+          <a href="Kayvan_Zahiri_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span>© 2026 Kayvan Zahiri</span>
+    <a href="#top">Back to top</a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

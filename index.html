@@ -284,7 +284,7 @@
     <section class="section" id="open-source" aria-labelledby="oss-title">
       <div class="wrap">
         <h2 class="sec-title" id="oss-title">Open source</h2>
-        <p class="sec-lede">33 pull requests merged into third-party production repos, with 67 more in review.</p>
+        <p class="sec-lede">61 pull requests merged into third-party production repos, with 85 more in review.</p>
       </div>
 
       <div class="wrap">
@@ -296,10 +296,21 @@
             <span class="pr-note">Merged by one of the authors of the Whisper paper.</span>
           </article>
           <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/google/sentencepiece/pull/1320" target="_blank" rel="noopener">google/sentencepiece #1320</a></strong>
+            <span class="pr-desc">On an empty batch, the <code>return_bytes</code> flag reached the binding as a list instead of a bool.</span>
+            <span class="pr-note">Merged by Taku Kudo, who wrote SentencePiece.</span>
+          </article>
+          <article class="obj flow skin-card pr">
             <span class="pill merged"><svg aria-hidden="true"><use href="#i-commit" /></svg>Landed</span>
             <strong><a class="cover" href="https://github.com/facebookresearch/faiss/commit/b4c66ba" target="_blank" rel="noopener">facebookresearch/faiss b4c66ba</a></strong>
             <span class="pr-desc">The index factory’s round-trip silently dropped the HNSW storage index.</span>
             <span class="pr-note">Imported and landed by a Meta engineer.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/NVIDIA/DALI/pull/6471" target="_blank" rel="noopener">NVIDIA/DALI #6471</a></strong>
+            <span class="pr-desc">Hue in <code>ColorJitter</code> came out 360× too small, so <code>hue=0.5</code> rotated half a degree.</span>
           </article>
           <article class="obj flow skin-card pr">
             <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
@@ -391,20 +402,20 @@
               <h3>Spotly Jobs</h3>
               <p class="role-title">AI Engineer</p>
               <ul>
-                <li>Built optimized ATS pipelines, increasing job coverage 5%+ and processing hundreds of postings per run via dlt/dbt</li>
-                <li>Created 7 Dagster assets/sensors to automate ETL workflows, reducing manual intervention 50%+</li>
-                <li>Improved processing speed by 30–40% through optimized scraping logic and API handling</li>
+                <li>Engineered ATS data pipelines using dlt and dbt, expanding job posting coverage by 5%+ and scaling automated processing to 500+ postings per pipeline run</li>
+                <li>Built 7 Dagster assets and sensors to automate ETL workflows, cutting manual engineering intervention by 50%+ and saving 10+ engineer-hours per week</li>
+                <li>Improved data ingestion throughput by 30–40% through optimized scraping logic and REST API handling, processing 150–200 additional postings per hour at no added infrastructure cost</li>
               </ul>
             </div>
           </li>
           <li class="role">
             <p class="role-when"><span>May 2024 – Sep 2025</span><span>Remote</span></p>
             <div class="role-what">
-              <h3>Outlier AI</h3>
+              <h3>Outlier AI (Scale AI)</h3>
               <p class="role-title">AI Engineer</p>
               <ul>
                 <li>Trained LLMs using RLHF, improving instruction-following accuracy by 20%</li>
-                <li>Evaluated 1M+ tokens across multiple datasets, surfacing 300+ instruction-following errors</li>
+                <li>Evaluated 1M+ tokens across 5+ datasets, identifying 300+ instruction-following errors that directly informed targeted fine-tuning</li>
                 <li>Refactored 3+ AI models to generate more precise and succinct output</li>
               </ul>
             </div>
@@ -429,7 +440,7 @@
               <ul>
                 <li>Built Slack integrations into a codebase of over 10,000 lines of code</li>
                 <li>Delivered 8 sprint cycles in Agile with a 95% on-time delivery rate</li>
-                <li>Collaborated directly with the CEO and a team of professional developers</li>
+                <li>Collaborated directly with the CEO and senior engineering team, with executive-level product visibility</li>
               </ul>
             </div>
           </li>

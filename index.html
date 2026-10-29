@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kayvan Zahiri, AI engineer in San Francisco</title>
-  <meta name="description" content="Kayvan Zahiri is an AI engineer in San Francisco, the founder of ResumeAI, and most recently on the Voice AI team at Asurion." />
+  <meta name="description" content="Kayvan Zahiri is an AI engineer in San Francisco, the founder of BuildGist and ResumeAI, and a software engineer at Clipboard Sports." />
   <meta name="theme-color" content="#e9eaec" />
   <link rel="canonical" href="https://kayvan-zahiri.github.io/Portfolio/" />
   <meta property="og:title" content="Kayvan Zahiri, AI engineer in San Francisco" />
-  <meta property="og:description" content="Founder of ResumeAI. Most recently on the Voice AI team at Asurion." />
+  <meta property="og:description" content="Founder of BuildGist and ResumeAI. Software engineer at Clipboard Sports." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kayvan-zahiri.github.io/Portfolio/" />
   <meta property="og:image" content="https://kayvan-zahiri.github.io/Portfolio/og-image.png" />
@@ -66,9 +66,9 @@
     <section class="table" aria-labelledby="name">
       <div class="hero">
         <h1 id="name"><span>Kayvan</span> <span>Zahiri</span></h1>
-        <p class="lede">AI engineer in San Francisco. Founder of ResumeAI.</p>
+        <p class="lede">AI engineer in San Francisco. Founder of BuildGist and ResumeAI.</p>
         <div class="cta">
-          <a class="btn" href="mailto:kayvanandre@gmail.com">Email me</a>
+          <a class="btn" href="mailto:kzahiri@dons.usfca.edu">Email me</a>
           <a class="text-link" href="Kayvan_Zahiri_Resume.pdf" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
@@ -114,7 +114,33 @@
         <h2 class="sec-title" id="work-title">Work</h2>
       </div>
 
-      <article class="wrap spread" id="resumeai">
+      <article class="wrap spread" id="buildgist">
+        <div class="scene" data-scene>
+          <div class="obj skin-window" style="--x:3; --y:6; --w:54; --r:-2deg">
+            <span class="tb" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span>BuildGist</span>
+            <img src="assets/buildgist-run.webp" width="1040" height="1094" alt="BuildGist run page explaining an added Google sign-in, with a high-severity concern that any signed-in user can delete anyone else's note" loading="lazy" draggable="false" />
+          </div>
+          <div class="obj skin-icon bg-blue" style="--x:70; --y:4; --w:14; --r:8deg">
+            <img src="assets/buildgist-icon.webp" width="160" height="160" alt="BuildGist app icon" loading="lazy" draggable="false" />
+          </div>
+          <div class="obj skin-card result" style="--x:54; --y:30; --w:44; --r:3deg">
+            <p class="result-big">89<span> ms</span></p>
+            <p class="result-label">on the agent’s critical path</p>
+            <dl class="result-rows">
+              <div><dt>100 files</dt><dd>149 ms</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="copy">
+          <p class="kicker">Founder. macOS app.</p>
+          <h3>BuildGist</h3>
+          <p>Explains what Claude Code, Cursor or Codex changed after every run that matters. A local classifier picks those runs: a one-line change to an auth file outranks a 300-line README rewrite. The model has to cite an exact quote for every claim, and each citation is checked in code; a comment or a test’s name can show what someone meant, but only executable code can establish what the code does. Releases are gated on an eval harness for factual accuracy, hallucinations and planted-bug detection.</p>
+          <p class="stack">Python, Rust (Tauri), Claude API, Stripe, Fly.io</p>
+          <p class="links"><a class="ext" href="https://buildgist.com/" target="_blank" rel="noopener">buildgist.com</a></p>
+        </div>
+      </article>
+
+      <article class="wrap spread flip" id="resumeai">
         <div class="scene" data-scene>
           <div class="obj skin-window" style="--x:1; --y:13; --w:80; --r:-2deg">
             <span class="tb" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span>ResumeAI</span>
@@ -137,7 +163,7 @@
         </div>
       </article>
 
-      <article class="wrap spread flip" id="parkcast">
+      <article class="wrap spread" id="parkcast">
         <div class="scene" data-scene>
           <div class="obj skin-card map-card" style="--x:4; --y:15; --w:92; --r:2deg">
             <span class="map">
@@ -161,7 +187,7 @@
         </div>
       </article>
 
-      <article class="wrap spread" id="pantriq">
+      <article class="wrap spread flip" id="pantriq">
         <div class="scene" data-scene>
           <div class="obj skin-phone" style="--x:14; --y:2; --w:31; --r:-6deg">
             <img src="assets/pantriq-discover.webp" width="660" height="1434" alt="PantrIQ Discover screen with featured recipes" loading="lazy" draggable="false" />
@@ -182,7 +208,7 @@
         </div>
       </article>
 
-      <article class="wrap spread flip" id="asr-age-gap">
+      <article class="wrap spread" id="asr-age-gap">
         <div class="scene" data-scene>
           <figure class="obj skin-card fig" style="--x:7; --y:12; --w:86; --r:-2deg">
             <p class="fig-title">Word error rate, Whisper</p>
@@ -207,7 +233,7 @@
         </div>
       </article>
 
-      <article class="wrap spread" id="agent-hands">
+      <article class="wrap spread flip" id="agent-hands">
         <div class="scene wide" data-scene>
           <div class="obj skin-window legacy" style="--x:3; --y:14; --w:94; --r:-2deg">
             <span class="tb" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span>Meridian Core</span>
@@ -223,7 +249,7 @@
         </div>
       </article>
 
-      <article class="wrap spread flip" id="earthbench">
+      <article class="wrap spread" id="earthbench">
         <div class="scene wide" data-scene>
           <div class="obj skin-card result" style="--x:19; --y:10; --w:62; --r:3deg">
             <p class="result-big">71<span>/75</span></p>
@@ -247,6 +273,24 @@
         <h3 class="more-title">More projects</h3>
         <ul class="more-list" role="list">
           <li>
+            <h4>handoff-note</h4>
+            <p>A Claude Code plugin for switching agents. <code>/handoff</code> writes a HANDOFF.md that quotes your request exactly as you typed it, then lists the decisions made, what changed, what’s left and how to check the work, so Codex, Cursor or a fresh session can pick up without you explaining it again.</p>
+            <p class="stack">Claude Code plugin, Skills</p>
+            <a class="ext" href="https://github.com/Kayvan-Zahiri/claude-code-handoff" target="_blank" rel="noopener" aria-label="handoff-note on GitHub">GitHub</a>
+          </li>
+          <li>
+            <h4>brainwire</h4>
+            <p>Lossless codec for Neuralink N1 electrode recordings: 2.79× across all 743 files, ahead of <code>xz -9e</code> while encoding 4.6× faster with 49 KB of model state. The design came from measuring the data first: the samples sit on a 64-step ADC lattice, which makes plain first difference the best predictor.</p>
+            <p class="stack">C, Entropy coding, Compression</p>
+            <a class="ext" href="https://github.com/Kayvan-Zahiri/neuralink-compression" target="_blank" rel="noopener" aria-label="brainwire on GitHub">GitHub</a>
+          </li>
+          <li>
+            <h4>State of ATS 2026</h4>
+            <p>Open dataset of which applicant tracking system 738 large employers use, with a keyless npm API. Version 2.1.0 re-checked the snapshot against live careers portals and cut the verified count from 704 to 421.</p>
+            <p class="stack">Dataset, Node.js, npm, MIT</p>
+            <a class="ext" href="https://github.com/Kayvan-Zahiri/state-of-ats-2026" target="_blank" rel="noopener" aria-label="State of ATS 2026 on GitHub">GitHub</a>
+          </li>
+          <li>
             <h4>Search Engine</h4>
             <p>Full-stack search engine with inverted index, TF-IDF ranking and a multithreaded web crawler. 1,746 SLOC with 1,910 lines of Javadoc documentation.</p>
             <p class="stack">Java 21, Apache OpenNLP, Jetty, Bootstrap, Maven</p>
@@ -262,7 +306,7 @@
             <h4>AI Interviewer Tool</h4>
             <p>GenAI research app that simulates user interviews and focus groups with participant personas you define, for product and UX research.</p>
             <p class="stack">Python, Streamlit, OpenAI, Prompt engineering</p>
-            <a class="ext" href="https://testrepo-q6urbxbtjxhdzbpf2psn2x.streamlit.app/" target="_blank" rel="noopener" aria-label="AI Interviewer Tool live app">Live app</a>
+            <span class="no-link"></span>
           </li>
           <li>
             <h4>AI/ML Industry Data Dashboard</h4>
@@ -284,7 +328,7 @@
     <section class="section" id="open-source" aria-labelledby="oss-title">
       <div class="wrap">
         <h2 class="sec-title" id="oss-title">Open source</h2>
-        <p class="sec-lede">61 pull requests merged into third-party production repos, with 85 more in review.</p>
+        <p class="sec-lede">91 pull requests merged into third-party production repos, with more in review.</p>
       </div>
 
       <div class="wrap">
@@ -297,9 +341,24 @@
           </article>
           <article class="obj flow skin-card pr">
             <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
-            <strong><a class="cover" href="https://github.com/google/sentencepiece/pull/1320" target="_blank" rel="noopener">google/sentencepiece #1320</a></strong>
+            <strong>google/sentencepiece <a href="https://github.com/google/sentencepiece/pull/1320" target="_blank" rel="noopener">#1320</a> and <a href="https://github.com/google/sentencepiece/pull/1352" target="_blank" rel="noopener">#1352</a></strong>
             <span class="pr-desc">On an empty batch, the <code>return_bytes</code> flag reached the binding as a list instead of a bool.</span>
             <span class="pr-note">Merged by Taku Kudo, who wrote SentencePiece.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/NVIDIA-NeMo/Speech/pull/16201" target="_blank" rel="noopener">NVIDIA-NeMo/Speech #16201</a></strong>
+            <span class="pr-desc">The end-of-utterance evaluator could report negative false negatives, which are counts, after a prediction cut a reference short.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong>microsoft/onnxscript <a href="https://github.com/microsoft/onnxscript/pull/3097" target="_blank" rel="noopener">#3097</a>, <a href="https://github.com/microsoft/onnxscript/pull/3098" target="_blank" rel="noopener">#3098</a>, <a href="https://github.com/microsoft/onnxscript/pull/3099" target="_blank" rel="noopener">#3099</a>, <a href="https://github.com/microsoft/onnxscript/pull/3101" target="_blank" rel="noopener">#3101</a> and <a href="https://github.com/microsoft/onnxscript/pull/3102" target="_blank" rel="noopener">#3102</a></strong>
+            <span class="pr-desc">Five fixes to the graph rewriter, starting with Relu/Clip chains it fused even when their ranges didn’t overlap.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/docling-project/docling/pull/4836" target="_blank" rel="noopener">IBM docling #4836</a></strong>
+            <span class="pr-desc">Whisper writes Chinese and Japanese with full-width 。？！, so a whole CJK transcript merged into one sentence and diarization gave it a single speaker.</span>
           </article>
           <article class="obj flow skin-card pr">
             <span class="pill merged"><svg aria-hidden="true"><use href="#i-commit" /></svg>Landed</span>
@@ -311,6 +370,11 @@
             <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
             <strong><a class="cover" href="https://github.com/NVIDIA/DALI/pull/6471" target="_blank" rel="noopener">NVIDIA/DALI #6471</a></strong>
             <span class="pr-desc">Hue in <code>ColorJitter</code> came out 360× too small, so <code>hue=0.5</code> rotated half a degree.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
+            <strong><a class="cover" href="https://github.com/huggingface/transformers/pull/47888" target="_blank" rel="noopener">huggingface/transformers #47888</a></strong>
+            <span class="pr-desc">The speech recognition pipeline mangled stereo audio stored channels-last when converting it to mono.</span>
           </article>
           <article class="obj flow skin-card pr">
             <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
@@ -336,35 +400,24 @@
             <span class="pr-desc">Closed as untouchable generated code until I showed the file was listed in their own .fernignore.</span>
           </article>
           <article class="obj flow skin-card pr">
-            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
-            <strong><a class="cover" href="https://github.com/deepgram/deepgram-python-sdk/pull/767" target="_blank" rel="noopener">deepgram-python-sdk #767</a></strong>
-            <span class="pr-desc">Merged into Deepgram’s Python SDK.</span>
+            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
+            <strong><a class="cover" href="https://github.com/microsoft/markitdown/pull/2368" target="_blank" rel="noopener">microsoft/markitdown #2368</a></strong>
+            <span class="pr-desc">One integral in a Word document silently dropped every equation in it.</span>
           </article>
           <article class="obj flow skin-card pr">
-            <span class="pill merged"><svg aria-hidden="true"><use href="#i-merge" /></svg>Merged</span>
-            <strong><a class="cover" href="https://github.com/huggingface/transformers/pull/47888" target="_blank" rel="noopener">huggingface/transformers #47888</a></strong>
-            <span class="pr-desc">Merged into Hugging Face Transformers.</span>
+            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
+            <strong><a class="cover" href="https://github.com/deepspeedai/DeepSpeed/pull/8396" target="_blank" rel="noopener">deepspeedai/DeepSpeed #8396</a></strong>
+            <span class="pr-desc">Reshaping a ZeRO checkpoint to fewer data-parallel ranks crashed on Adam’s scalar <code>step</code>.</span>
+          </article>
+          <article class="obj flow skin-card pr">
+            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
+            <strong><a class="cover" href="https://github.com/scikit-learn/scikit-learn/pull/34716" target="_blank" rel="noopener">scikit-learn #34716</a></strong>
+            <span class="pr-desc"><code>RadiusNeighborsRegressor</code> silently returned a sentinel value for empty neighborhoods with integer targets.</span>
           </article>
           <article class="obj flow skin-card pr">
             <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
             <strong><a class="cover" href="https://github.com/microsoft/onnxruntime/pull/32376" target="_blank" rel="noopener">microsoft/onnxruntime #32376</a></strong>
             <span class="pr-desc">Shape inference for ONNX reduction operators.</span>
-          </article>
-          <article class="obj flow skin-card pr">
-            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
-            <strong><a class="cover" href="https://github.com/NVIDIA-NeMo/Speech/pull/16200" target="_blank" rel="noopener">NVIDIA-NeMo/Speech #16200</a></strong>
-            <span class="pr-desc">A voice-activity detector clipping the last frame of every segment.</span>
-            <span class="pr-note">Approved by an NVIDIA maintainer.</span>
-          </article>
-          <article class="obj flow skin-card pr">
-            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
-            <strong><a class="cover" href="https://github.com/google-deepmind/optax/pull/1767" target="_blank" rel="noopener">google-deepmind/optax #1767</a></strong>
-            <span class="pr-desc">A learning-rate schedule that never fired on negative metrics.</span>
-          </article>
-          <article class="obj flow skin-card pr">
-            <span class="pill open"><svg aria-hidden="true"><use href="#i-pr" /></svg>In review</span>
-            <strong><a class="cover" href="https://github.com/pytorch/audio/pull/4227" target="_blank" rel="noopener">pytorch/audio #4227</a></strong>
-            <span class="pr-desc">A strided-window bug crashing feature extraction on non-contiguous audio.</span>
           </article>
         </div>
       </div>
@@ -384,6 +437,38 @@
       <div class="wrap">
         <h2 class="sec-title" id="exp-title">Experience</h2>
         <ol class="roles" role="list">
+          <li class="role">
+            <p class="role-when"><span>Oct 2026 – Present</span><span>Remote</span></p>
+            <div class="role-what">
+              <h3>Clipboard Sports</h3>
+              <p class="role-title">Software Engineer</p>
+              <ul>
+                <li>Full-stack engineering for a sports technology startup, working directly with the founder and engineering team on the initial development roadmap across frontend, backend and product</li>
+                <li>Own debugging, testing and launch-readiness work on core product features</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <p class="role-when"><span>Oct 2026</span><span>Remote</span></p>
+            <div class="role-what">
+              <h3>SomatiX</h3>
+              <p class="role-title">Software Engineering Consultant</p>
+              <ul>
+                <li>Led a release-readiness review of a React Native/Expo mobile app (TypeScript, Supabase, SQLite, REST APIs), assessing authentication, authorization, privacy, offline sync, data integrity, architecture and reliability</li>
+                <li>Executed 42 controlled validation scenarios and delivered prioritized findings with technical evidence and a Codex-ready remediation plan</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <p class="role-when"><span>Jul 2026 – Present</span><span>San Francisco, CA</span></p>
+            <div class="role-what">
+              <h3>University of San Francisco</h3>
+              <p class="role-title">Teaching Assistant</p>
+              <ul>
+                <li>Supported two graduate Data Science (MSDS) courses, with a third upcoming</li>
+              </ul>
+            </div>
+          </li>
           <li class="role">
             <p class="role-when"><span>Jan 2026 – Jun 2026</span><span>Remote</span></p>
             <div class="role-what">
@@ -470,7 +555,7 @@
         </div>
         <div class="about-copy">
           <h2 class="sec-title" id="about-title">About</h2>
-          <p>I’m an AI engineer, software developer and the founder of ResumeAI, an AI-powered resume platform I built solo that’s now used across 7+ countries. Most recently I was on the Voice AI team at Asurion, where I built a voice turn-detection system and scaled an automated labeling pipeline to 400K+ audio samples, used to fine-tune a Whisper-based model for real-time conversational AI.</p>
+          <p>I’m an AI engineer and a software engineer at Clipboard Sports, a sports technology startup. I founded BuildGist, a Mac app that explains what coding agents changed, and ResumeAI, an AI-powered resume platform I built solo that’s now used across 7+ countries. Before that I was on the Voice AI team at Asurion, where I built a voice turn-detection system and scaled an automated labeling pipeline to 400K+ audio samples, used to fine-tune a Whisper-based model for real-time conversational AI.</p>
           <p>With a B.S. in Computer Science and an M.S. in Data Science &amp; AI from the University of San Francisco, I work across the full AI/ML lifecycle, from training and fine-tuning LLMs with RLHF to shipping production MLOps pipelines and full-stack apps end to end.</p>
           <dl class="rows focus">
             <div><dt>AI / ML</dt><dd>LLM fine-tuning, RLHF, RAG, voice AI, prompt engineering and model evaluation</dd></div>
@@ -487,8 +572,8 @@
             <div><dt>Languages</dt><dd>Python, TypeScript, Java, C, SQL, NoSQL, JavaScript, HTML/CSS</dd></div>
             <div><dt>AI / ML</dt><dd>Generative AI, LLM fine-tuning, RLHF, voice AI, prompt engineering, model evaluation, RAG, deep learning, PyTorch, Whisper, Claude API, OpenAI</dd></div>
             <div><dt>Data science</dt><dd>PySpark, SparkSQL, Pandas, NumPy, Scikit-Learn, Matplotlib, Plotly, ETL pipelines, regression, classification, unsupervised learning</dd></div>
-            <div><dt>Tools &amp; platforms</dt><dd>AWS, GCP, Docker, Git / GitHub, Bash, LiveKit, MLflow, Dagster, Apache Airflow, dlt / dbt, MongoDB, distributed computing</dd></div>
-            <div><dt>Frameworks</dt><dd>React / React Native, Next.js, FastAPI, Supabase, Stripe, TailwindCSS, Streamlit, Bootstrap, Eclipse Jetty, Maven</dd></div>
+            <div><dt>Tools &amp; platforms</dt><dd>Claude Code, Cursor, Codex, AWS, GCP, Docker, Git / GitHub, Bash, LiveKit, MLflow, Dagster, Apache Airflow, dlt / dbt, MongoDB, distributed computing</dd></div>
+            <div><dt>Frameworks</dt><dd>React / React Native (Expo), Next.js, Tauri, FastAPI, Supabase, Stripe, TailwindCSS, Streamlit, Bootstrap, Eclipse Jetty, Maven</dd></div>
           </dl>
         </div>
         <div>
@@ -507,7 +592,7 @@
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 class="contact-kicker" id="contact-title">Contact</h2>
-        <a class="contact-email" href="mailto:kayvanandre@gmail.com">kayvanandre@gmail.com</a>
+        <a class="contact-email" href="mailto:kzahiri@dons.usfca.edu">kzahiri@dons.usfca.edu</a>
         <p class="contact-line">The fastest way to reach me is email. I’m looking for AI engineering roles and interesting problems to work on.</p>
         <p class="links">
           <a class="ext" href="https://www.linkedin.com/in/kayvan-zahiri/" target="_blank" rel="noopener">LinkedIn</a>

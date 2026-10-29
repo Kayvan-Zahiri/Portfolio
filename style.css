@@ -339,6 +339,10 @@ html:not(.js) .bar {
   background: #1f9d55;
 }
 
+.skin-icon.bg-blue {
+  background: #3b5bdb;
+}
+
 .skin-window {
   overflow: hidden;
   border-radius: 10px;

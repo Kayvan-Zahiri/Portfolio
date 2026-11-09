@@ -1478,3 +1478,12 @@ html:not(.js) .bar {
     opacity: 1 !important;
   }
 }
+
+.pub-title {
+  margin-top: clamp(40px, 5vw, 56px);
+}
+
+.edu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
